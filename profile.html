@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Socialorm</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Socialorm - Profile</title>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/55bc525515.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -13,6 +21,150 @@
     />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Socialorm</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav my-2 ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/events.html">Events</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/profile.html"
+                >Profile<span class="sr-only">(current)</span></a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <div class="container">
+              <div class="card shadow pb-4">
+                <div class="card-body">
+                  <div class="text-center pt-4">
+                    <img
+                      src="/images/ahmed.jpeg"
+                      alt="user profile picture"
+                      class="card-img-top"
+                      style="width: 250px; height: 15vw; object-fit: cover"
+                    />
+                    <h1 class="card-title mt-3">Ahmed Shahrour</h1>
+                    <hr />
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="d-flex flex-column">
+                        <label for="name">Name</label>
+                        <input
+                          disabled
+                          type="text"
+                          name="name"
+                          value="Ahmed Shahrour"
+                        />
+
+                        <label for="email" class="mt-2">Email</label>
+                        <input
+                          disabled
+                          type="email"
+                          name="email"
+                          value="ahmed.shahrour@students.makeschool.com"
+                        />
+
+                        <label for="dorm" class="mt-2">Dorm</label>
+                        <input disabled type="text" name="dorm" value="611" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex flex-column">
+                        <label for="status">Status</label>
+                        <input
+                          type="text"
+                          name="status"
+                          value="Down to Chill"
+                        />
+
+                        <label for="top_things" class="mt-2"
+                          >Top Things I Like</label
+                        >
+                        <input
+                          type="text"
+                          name="top_things"
+                          value="Philosophy"
+                          class="mt-1"
+                        />
+                        <input
+                          type="text"
+                          name="top_things"
+                          value="Music"
+                          class="mt-1"
+                        />
+                        <input
+                          type="text"
+                          name="top_things"
+                          value="Physics"
+                          class="mt-1"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-100 text-center mt-5">
+                    <button class="btn btn-primary w-25">Save</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-left text-primary">
+            Copyright © Socialorm 2020
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0 text-center">
+            <a class="btn btn-primary btn-social mx-2" href="#!"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-primary btn-social mx-2" href="#!"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-primary btn-social mx-2" href="#!"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="col-lg-4 text-lg-right">
+            <a class="mr-3" href="#!">Privacy Policy</a>
+            <a href="#!">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
