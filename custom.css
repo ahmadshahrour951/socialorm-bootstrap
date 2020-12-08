@@ -1,0 +1,18 @@
+:root {
+  --primary: #ff4444
+}
+
+.badge-primary {
+  background-color: #ff4444;
+  color: white
+}
+
+.text-primary {
+  color: #ff4444 !important;
+}
+
+.btn-primary {
+  background-color: #ff4444;
+  color: white;
+  border-color: #ff4444;
+}
