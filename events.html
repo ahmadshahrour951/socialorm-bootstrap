@@ -19,11 +19,12 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/custom.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ff4444 !important;">
       <div class="container">
-        <a class="navbar-brand" href="#">Socialorm</a>
+        <a class="navbar-brand text-white" href="/index.html">Socialorm</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,15 +40,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav my-2 ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
+              <a class="nav-link text-white" href="/index.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/events.html"
+              <a class="nav-link text-white-50" href="/events.html"
                 >Events<span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/profile.html">Profile</a>
+              <a class="nav-link text-white" href="/profile.html">Profile</a>
             </li>
           </ul>
         </div>
@@ -56,49 +57,325 @@
     <main>
       <div class="container py-4">
         <div class="row d-flex flex-wrap justify-content-center">
-          <div class="card col-3 m-2 shadow">
+          <div
+            class="card col-3 m-2 shadow"
+            style="cursor: pointer"
+            data-toggle="modal"
+            data-target="#basketModal"
+          >
             <img
               src="/images/basketball.jpeg"
               alt=""
               class="card-img-top"
               style="width: 100%; height: 15vw; object-fit: cover"
             />
-            <div class="text-center">
+            <div class="text-center mt-4">
               <h2 class="card-title">Basketball</h2>
             </div>
           </div>
-          <div class="card col-3 m-2 shadow">
+                    <!-- Modal -->
+          <div
+            class="modal fade"
+            id="basketModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="basketModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="basketModalLabel">Basketball</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <img src="/images/basketball.jpeg" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="font-weight-bold">Bio:</p>
+                      <p class="text-justify">
+                        We play every Saturday morning! We want the community to
+                        be aware of the health benefits by playing this. It
+                        helps calm you after the session and it is particularly
+                        great when there aint no rain.
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="font-weight-bold">Date:</p>
+                      <p>Jan 21, 2020</p>
+
+                      <p class="font-weight-bold">Time:</p>
+                      <p>3:00 PM</p>
+
+                      <p class=></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Attend
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+                    <div
+            class="card col-3 m-2 shadow"
+            style="cursor: pointer"
+            data-toggle="modal"
+            data-target="#footballModal"
+          >
             <img
               src="/images/football.jpeg"
               alt=""
               class="card-img-top"
               style="width: 100%; height: 15vw; object-fit: cover"
             />
-            <h2 class="card-title">Football</h2>
+            <div class="text-center mt-4">
+              <h2 class="card-title">Football</h2>
+            </div>
           </div>
-          <div class="card col-3 m-2 shadow">
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="footballModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="footballModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="footballModalLabel">Football</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <img src="/images/football.jpeg" class="img-fluid rounded"  style="height: 300px" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="font-weight-bold">Bio:</p>
+                      <p class="text-justify">
+                        We play every Saturday morning! We want the community to
+                        be aware of the health benefits by playing this. It
+                        helps calm you after the session and it is particularly
+                        great when there aint no rain.
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="font-weight-bold">Date:</p>
+                      <p>Jan 21, 2020</p>
+
+                      <p class="font-weight-bold">Time:</p>
+                      <p>3:00 PM</p>
+
+                      <p class=></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Attend
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div
+            class="card col-3 m-2 shadow"
+            style="cursor: pointer"
+            data-toggle="modal"
+            data-target="#runningModal"
+          >
             <img
               src="/images/running.jpg"
               alt=""
               class="card-img-top"
               style="width: 100%; height: 15vw; object-fit: cover"
             />
-            <div class="text-center">
+            <div class="text-center mt-4">
               <h2 class="card-title">Running</h2>
             </div>
           </div>
-          <div class="card col-3 m-2 shadow">
-            <img
+                    <!-- Modal -->
+          <div
+            class="modal fade"
+            id="runningModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="runningModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="runningModalLabel">Running</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <img src="/images/running.jpg" class="img-fluid rounded"  style="height: 300px" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="font-weight-bold">Bio:</p>
+                      <p class="text-justify">
+                        We play every Saturday morning! We want the community to
+                        be aware of the health benefits by playing this. It
+                        helps calm you after the session and it is particularly
+                        great when there aint no rain.
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="font-weight-bold">Date:</p>
+                      <p>Jan 21, 2020</p>
+
+                      <p class="font-weight-bold">Time:</p>
+                      <p>3:00 PM</p>
+
+                      <p class=></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Attend
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card col-3 m-2 shadow"
+            style="cursor: pointer"
+            data-toggle="modal"
+            data-target="#moviesModal"
+          >
+          <img
               src="/images/movies.png"
               alt=""
               class="card-img-top"
               style="width: 100%; height: 15vw; object-fit: cover"
             />
             <div class="text-center">
-              <h2 class="card-title">Movies</h2>
+              <h2 class="card-title mt-4">Movies</h2>
             </div>
           </div>
-          <div class="card col-3 m-2 shadow">
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="moviesModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="moviesModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="moviesModalLabel">Movies</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <img src="/images/movies.png" class="img-fluid rounded"  style="height: 300px" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="font-weight-bold">Bio:</p>
+                      <p class="text-justify">
+                        We play every Saturday morning! We want the community to
+                        be aware of the health benefits by playing this. It
+                        helps calm you after the session and it is particularly
+                        great when there aint no rain.
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="font-weight-bold">Date:</p>
+                      <p>Jan 21, 2020</p>
+
+                      <p class="font-weight-bold">Time:</p>
+                      <p>3:00 PM</p>
+
+                      <p class=></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Attend
+                  </button>
+                </div>
+              </div>
+              </div>
+          </div>
+          <div
+            class="card col-3 m-2 shadow"
+            style="cursor: pointer"
+            data-toggle="modal"
+            data-target="#musicModal"
+          >
             <img
               src="/images/electric_guitar.png"
               alt=""
@@ -109,7 +386,57 @@
               <h2 class="card-title">Music</h2>
             </div>
           </div>
-          <div class="card col-3 m-2 shadow">
+          <!-- Modal -->
+<div class="modal fade" id="musicModal" tabindex="-1" role="dialog" aria-labelledby="musicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="musicModalLabel">Music</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+                      <div class="modal-body">
+                  <div class="text-center">
+                    <img src="/images/electric_guitar.png" class="img-fluid rounded"  style="height: 300px" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="font-weight-bold">Bio:</p>
+                      <p class="text-justify">
+                        We play every Saturday morning! We want the community to
+                        be aware of the health benefits by playing this. It
+                        helps calm you after the session and it is particularly
+                        great when there aint no rain.
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="font-weight-bold">Date:</p>
+                      <p>Jan 21, 2020</p>
+
+                      <p class="font-weight-bold">Time:</p>
+                      <p>3:00 PM</p>
+
+                      <p class=></p>
+                    </div>
+                  </div>
+                </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          
+              
+
+          <div
+            class="card col-3 m-2 shadow"
+            style="cursor: pointer"
+            data-toggle="modal"
+            data-target="#heliModal"
+          >
             <img
               src="/images/helicopter.jpg"
               alt=""
@@ -120,6 +447,49 @@
               <h2 class="card-title">RC Helicopter</h2>
             </div>
           </div>
+          <!-- Modal -->
+<div class="modal fade" id="heliModal" tabindex="-1" role="dialog" aria-labelledby="heliModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="heliModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+                            <div class="modal-body">
+                  <div class="text-center">
+                    <img src="/images/helicopter.jpg" class="img-fluid rounded"  style="height: 300px" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="font-weight-bold">Bio:</p>
+                      <p class="text-justify">
+                        We play every Saturday morning! We want the community to
+                        be aware of the health benefits by playing this. It
+                        helps calm you after the session and it is particularly
+                        great when there aint no rain.
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p class="font-weight-bold">Date:</p>
+                      <p>Jan 21, 2020</p>
+
+                      <p class="font-weight-bold">Time:</p>
+                      <p>3:00 PM</p>
+
+                      <p class=></p>
+                    </div>
+                  </div>
+                </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </main>
@@ -143,8 +513,8 @@
             ></a>
           </div>
           <div class="col-lg-4 text-lg-right">
-            <a class="mr-3" href="#!">Privacy Policy</a>
-            <a href="#!">Terms of Use</a>
+            <a class="mr-3 text-primary" href="#!">Privacy Policy</a>
+            <a href="#!" class="text-primary">Terms of Use</a>
           </div>
         </div>
       </div>
