@@ -19,11 +19,12 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/custom.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ff4444 !important;">
       <div class="container">
-        <a class="navbar-brand" href="#">Socialorm</a>
+        <a class="navbar-brand text-white" href="/index.html">Socialorm</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,15 +40,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav my-2 ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/profile.html"
+              <a class="nav-link text-white-50" href="/profile.html"
                 >Dorms<span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/events.html">Events</a>
+              <a class="nav-link text-white" href="/events.html">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/profile.html">Profile</a>
+              <a class="nav-link text-white" href="/profile.html">Profile</a>
             </li>
           </ul>
         </div>
@@ -63,7 +64,7 @@
               style="overflow-x: auto"
             >
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#rafaModal">
                   <img
                     src="/images/rafa.jpeg"
                     class="card-img-top"
@@ -99,10 +100,67 @@
                     >
                   </div>
                 </div>
+                <!-- Modal -->
+                <div class="modal fade" id="rafaModal" tabindex="-1" role="dialog" aria-labelledby="rafaModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="rafaModalLabel">Rafa Vazquez</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/rafa.jpeg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>214</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                                        >Rubik's cubes</span
+                                      >
+                                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                                        >Running</span
+                                      >
+                                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                                        >FIFA</span
+                                      >
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#samModal">
                   <img
                     src="/images/samuel.png"
                     class="card-img-top"
@@ -138,10 +196,67 @@
                     >
                   </div>
                 </div>
+                                <!-- Modal -->
+                <div class="modal fade" id="samModal" tabindex="-1" role="dialog" aria-labelledby="samModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="samModalLabel">Samuel Madrigal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/samuel.png" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>214</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#alexModal">
                   <img
                     src="/images/alexandru.jpeg"
                     class="card-img-top"
@@ -177,10 +292,68 @@
                     >
                   </div>
                 </div>
+
+                                                <!-- Modal -->
+                <div class="modal fade" id="alexModal" tabindex="-1" role="dialog" aria-labelledby="alexModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="samModalLabel">Alexandru Turcanu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/alexandru.jpeg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>211</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#tristanModal">
                   <img
                     src="/images/tristan.jpeg"
                     class="card-img-top"
@@ -216,6 +389,64 @@
                     >
                   </div>
                 </div>
+
+                                                <!-- Modal -->
+                <div class="modal fade" id="tristanModal" tabindex="-1" role="dialog" aria-labelledby="tristanModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="tristanModalLabel">Tristan Thompson</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/tristan.jpeg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             </section>
@@ -229,7 +460,7 @@
               style="overflow-x: auto"
             >
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#joshModal">
                   <img
                     src="/images/joshua.png"
                     class="card-img-top"
@@ -265,10 +496,68 @@
                     >
                   </div>
                 </div>
+
+                                                <!-- Modal -->
+                <div class="modal fade" id="joshModal" tabindex="-1" role="dialog" aria-labelledby="joshModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="joshModalLabel">Joshua Riley</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/joshua.png" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#benModal">
                   <img
                     src="/images/ben.jpg"
                     class="card-img-top"
@@ -304,10 +593,67 @@
                     >
                   </div>
                 </div>
+                                                <!-- Modal -->
+                <div class="modal fade" id="benModal" tabindex="-1" role="dialog" aria-labelledby="benModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="benModalLabel">Ben Chan</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/ben.jpg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#jackieModal">
                   <img
                     src="/images/jackie.jpg"
                     class="card-img-top"
@@ -343,6 +689,63 @@
                     >
                   </div>
                 </div>
+                                                            <!-- Modal -->
+                <div class="modal fade" id="jackieModal" tabindex="-1" role="dialog" aria-labelledby="jackieModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="jackieModalLabel">Jackie Chan</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/jackie.jpg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             </section>
@@ -356,7 +759,7 @@
               style="overflow-x: auto"
             >
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#sergioModal">
                   <img
                     src="/images/sergio.jpeg"
                     class="card-img-top"
@@ -392,10 +795,67 @@
                     >
                   </div>
                 </div>
+                                                                            <!-- Modal -->
+                <div class="modal fade" id="sergioModal" tabindex="-1" role="dialog" aria-labelledby="sergioModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="sergioModalLabel">Sergio Rodriguez</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/sergio.jpeg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#nolanModal">
                   <img
                     src="/images/nolan.png"
                     class="card-img-top"
@@ -431,10 +891,67 @@
                     >
                   </div>
                 </div>
+                                                                            <!-- Modal -->
+                <div class="modal fade" id="nolanModal" tabindex="-1" role="dialog" aria-labelledby="nolanModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="nolanModalLabel">Nolan Ngo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/nolan.png" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#dinoModal">
                   <img
                     src="/images/dino.jpg"
                     class="card-img-top"
@@ -470,10 +987,67 @@
                     >
                   </div>
                 </div>
+                                                                                            <!-- Modal -->
+                <div class="modal fade" id="dinoModal" tabindex="-1" role="dialog" aria-labelledby="dinoModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="dinoModalLabel">Dino Martinez</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/dino.jpg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#ignacioModal">
                   <img
                     src="/images/ignacio.jpeg"
                     class="card-img-top"
@@ -509,10 +1083,67 @@
                     >
                   </div>
                 </div>
+                                                                                                            <!-- Modal -->
+                <div class="modal fade" id="ignacioModal" tabindex="-1" role="dialog" aria-labelledby="ignacioModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="ignacioModalLabel">Ignacio Jimenez</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/ignacio.jpeg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#edisonModal">
                   <img
                     src="/images/edison.jpg"
                     class="card-img-top"
@@ -548,10 +1179,67 @@
                     >
                   </div>
                 </div>
+                                                                                                                            <!-- Modal -->
+                <div class="modal fade" id="edisonModal" tabindex="-1" role="dialog" aria-labelledby="edisonModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="edisonModalLabel">Edison Li</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/edison.jpg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-3">
-                <div class="card card-block mx-2 shadow" style="min-height: 300px">
+                <div class="card card-block mx-2 shadow" style="min-height: 300px; cursor: pointer;" data-toggle="modal" data-target="#rickModal">
                   <img
                     src="/images/rick.jpeg"
                     class="card-img-top"
@@ -587,6 +1275,64 @@
                     >
                   </div>
                 </div>
+                                                                                                                                            <!-- Modal -->
+                <div class="modal fade" id="rickModal" tabindex="-1" role="dialog" aria-labelledby="rickModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="edisonModalLabel">Rick Jacobson</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <img class="img-fluid rounded" src="/images/rick.jpeg" style="height: 400px;">
+                        </div>
+                        
+                        <div class="container">
+                          <hr>
+                          <div class="row">
+                            <div class="col">
+                              <p class="font-weight-bold">Bio:</p>
+                              <p class="text-justify">I like chilling by the beach and enjoy the comfort walks at sunset. I have a calm demeanor but I also go WILD! (sometimes). Please knock on my door I'm always down to chill except on Sundays.. please never Sundays lol</p>
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Room:</p>
+                                  <p>Private</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="font-weight-bold">Top things I like:</p>
+                                    <div class="d-flex flex-wrap">
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Rubik's cubes</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >Running</span
+                      >
+                      <span class="badge badge-pill badge-primary px-3 py-2 m-1"
+                        >FIFA</span
+                      >
+                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Follow</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               </div>
 
             </div>
@@ -614,8 +1360,8 @@
             ></a>
           </div>
           <div class="col-lg-4 text-lg-right">
-            <a class="mr-3" href="#!">Privacy Policy</a>
-            <a href="#!">Terms of Use</a>
+            <a class="mr-3 text-primary" href="#!">Privacy Policy</a>
+            <a href="#!" class="text-primary">Terms of Use</a>
           </div>
         </div>
       </div>
